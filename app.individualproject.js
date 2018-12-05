@@ -12,9 +12,9 @@ const bodyParser = require('body-parser');
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const Op = Sequelize.Op;
 
-const PORT = process.env.PORT || 5000;
-
 require('dotenv').config();
+
+const PORT = process.env.PORT || 5000;
 
 ////////////////////////////////////////////////////////////////////////////////
 // BCRYPT PASSWORD
