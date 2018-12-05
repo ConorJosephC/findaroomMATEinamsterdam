@@ -4,7 +4,8 @@
   "description": "_State the purpose of your application clearly and concisely. Try to do it in a single sentence._",
   "main": "app.individualproject.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",

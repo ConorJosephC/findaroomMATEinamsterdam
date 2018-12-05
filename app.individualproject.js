@@ -12,6 +12,10 @@ const bodyParser = require('body-parser');
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const Op = Sequelize.Op;
 
+const PORT = process.env.PORT || 5000;
+
+require('dotenv').config();
+
 ////////////////////////////////////////////////////////////////////////////////
 // BCRYPT PASSWORD
 ////////////////////////////////////////////////////////////////////////////////
@@ -512,7 +516,7 @@ sequelize.sync({
     force: false
   })
   .then(() => {
-    const server = app.listen(3018, () => {
-      console.log('App is running on port 3018');
+    const server = app.listen(PORT, () => {
+      console.log('App is running on port '+ PORT);
     })
   })
