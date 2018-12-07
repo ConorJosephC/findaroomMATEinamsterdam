@@ -7,10 +7,10 @@ const express = require('express');
 const ejs = require('ejs');
 const session = require('express-session');
 const app = express();
-const pg = require('pg');
+const { Client } = require('pg')
 
 const bodyParser = require('body-parser');
-const SequelizeStore = require('connect-session-sequelize')(session.Store)
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const Op = Sequelize.Op;
 
 require('dotenv').config();
